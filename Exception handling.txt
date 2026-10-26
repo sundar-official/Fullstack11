@@ -1,0 +1,76 @@
+Exception handling
+              in java is a mechanism that allows you to handle runtime errors and maintain the normal flow of an application
+
+
+
+
+definition :
+
+-->1.Checked exception are exceptions that are checked at compile time 
+
+--> The compiler ensures that these exceptions are either handled using a try-catch block or declared using the throws keyword                      in the method signature.
+
+-->2.unchecked exceptions (runtime exceptions) that are not corrected when compile time it only at run time
+
+-->the results are logical errors or improper APIs
+
+     examples:
+    *NullPointerException
+    *ArrayIndexOutOfBoundsException
+    *ArithmeticException
+
+
+ERRORS::
+
+-->Errors are serious issues that occue at runtime and cannot be handled by the typical exception-handling mechanisms
+-->They are mostly related to the environment in which the application is running 
+-->Errors are beyond the control of the program and are usually not recoverable
+
+      Examples:
+    *StackOverflowError
+    *OutOfMemoryError
+    *VirtualMachineError
+
+Assert Error :
+
+
+
+
+Keywords Used in Exception Handling :
+
+         * try
+         * catch
+         * finally
+         * throw
+         * throws
+
+
+ 1.try
+     
+      *Code that might throw an exception is placed inside a try block 
+ 2.catch
+
+      *This block handles the exception thrown by the try block.
+ 3.finally
+ 
+      *The finally block always executes, regardless of whether an exception occurs or not.
+      *It is typically used to cleanup code, such as closing files or releasing resources.
+ 4.throw 
+   
+      *The throw keyword is used to explicity throw an exception 
+ 5.throws 
+
+      *The throws keyword is used in the method signature to declare that a method may throw exceptions.
+
+SYNTAX:
+
+try
+{
+   //Statement that can cause exception.
+}
+catch(exceptionname obj)
+{
+  //Error handling code 
+}
+
+ 
